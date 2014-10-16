@@ -1,0 +1,78 @@
+.likebox {
+    display: none;
+    background: #000000;
+    width: 92%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    padding: 4%;
+    opacity: 0.8;
+}
+.likebox .fanbox {
+    position: fixed;
+    background:white;
+    width:88%;
+    height:200px;
+    top: 0; right: 0; bottom: 0; left: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: auto 4%;
+    padding: 2%;
+}
+.likebox a.boxclose{
+    position: absolute;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #4C4C4C;
+    border-radius: 30px;
+    background: #000000;
+    font-size: 18px;
+    font-weight: lighter;
+    display: inline-block;
+    line-height: 10px;
+    padding: 6px 6px;
+    text-decoration: none;
+    right: -8px;
+    top: -8px;
+}
+.likebox .footer{
+    position: absolute;
+    cursor:pointer;
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter;
+    display: inline-block;
+    line-height: 10px;
+    padding: 6px 6px;
+    text-decoration: none;
+    margin: auto;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    text-align: right;
+    font-style: italic;
+}
+.likebox .boxclose:before {
+    content: "×";
+}
+ 
+.likebox .fanbox iframe {
+    width: 100%;
+    height: 100%;
+}
+ 
+@media (min-width: 768px) {
+ 
+    .likebox .fanbox {
+        width: 400px;
+        padding: 15px;
+        margin: auto;
+    }
+}
